@@ -1,0 +1,101 @@
+/* Sets the background image of the body with radial gradient colors and specifies the font family */
+body{
+  margin-top: 200px;
+  background-image: radial-gradient(#B0DAFF,#a5bef4,#bbd6e0);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* Sets the margin, border radius, text alignment, and background image properties of the container div */
+  .container{
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 50%;
+    background-image: url("clock1.png");
+    background-position: center;
+    background-size: cover;
+  }
+  /* Sets the margin and color properties of the h1 element */
+  h1 {
+    margin-top: 5px;
+    color: #2E4F4F;
+  }
+  /* Sets the margin and color properties of the alarm-form div */
+  .alarm-form {
+    margin-top: 5px;
+    color: #2E4F4F;
+  }
+  /* Sets the font size and margin-right properties of the label element */
+  label {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  /* Sets the padding, font size, and margin-right properties of the input element */
+  input {
+    padding: 2px;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  /* Sets the padding, font size, background color, color, border, border radius, and cursor properties of the button element */
+  button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color:#2E4F4F;
+    color: #FDF7C3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+  /* Sets the margin-top property of the button div */
+     #button{
+        margin-top: 20px;
+     }
+     button:hover{
+        background-color: brown;
+
+     }  
+
+     /* Sets the margin-top and font size properties of the alarm-status div */
+  .alarm-status {
+    margin-top: 50px;
+    font-size: 30px;
+  }
+  button {
+    margin-left: 50px;
+  }
+  
+  /* Sets the font-family property of the alarmsList ul element */
+  #alarmsList{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+  
+}
+    .clock {
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  
+  .clock span {
+    display: inline-block;
+    width: 2rem;
+    text-align: center;
+    /* border: 0px solid #333; */
+    /* border-radius: 2px;
+     */
+     padding: 0.5rem;
+    /* margin: 0.5rem 0.5rem; */
+  }
+/* Alarm delete button */
+.delete-button {
+  color: #ffffff;
+  border: none;
+  padding: 10px 2px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: brown;
+}
