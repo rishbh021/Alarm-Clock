@@ -1,6 +1,9 @@
+// Array to store alarms
 var alarms = [];
+// Variable to store the timeout ID of the alarm
 var alarmTimeout;
 
+// Function to update the current time
 function setTime() {
   const now = new Date();
   const hours = now.getHours().toString().padStart(2, '0');
@@ -15,9 +18,10 @@ function setTime() {
   minutesSpan.textContent = minutes;
   secondsSpan.textContent = seconds;
 }
-
+//update the time every second
 setInterval(setTime, 1000);
 
+//function to set the alarm
 function setAlarm() {
   var hourInput = document.getElementById("hour").value;
   var minuteInput = document.getElementById("minute").value;
@@ -52,6 +56,7 @@ function setAlarm() {
 
   document.getElementById("alarmStatus").innerHTML = "Alarm set for " + hourInput + ":" + minuteInput;
 }
+// Funcition to stop the alarm
 
 function stopAlarm() {
   clearTimeout(alarmTimeout);
@@ -60,7 +65,7 @@ function stopAlarm() {
   document.getElementById("alarmSound").currentTime = 0;
   document.getElementById("stopButton").disabled = true;
 }
-
+//Function to update the list of alarm display on the page
 function updateAlarmsList() {
   var alarmsList = document.getElementById("alarmsList");
   alarmsList.innerHTML = "";
@@ -70,7 +75,7 @@ function updateAlarmsList() {
     var alarmTime = alarm.hour + ":" + alarm.minute;
     var alarmItem = document.createElement("li");
     alarmItem.textContent = alarmTime;
-
+//Create a delete button for each alarm
     var deleteButton = document.createElement("button");
     deleteButton.textContent = "Delete";
     deleteButton.classList.add("delete-button");
@@ -86,6 +91,7 @@ function updateAlarmsList() {
     alarmsList.appendChild(alarmItem);
   }
 }
+//function to update the alarm status message
 
 function updateAlarmStatus() {
   var alarmStatus = document.getElementById("alarmStatus");
